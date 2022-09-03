@@ -2,7 +2,7 @@ import numpy as np
 import pandas
 import matplotlib.pyplot as plt
 trueValue = 1104
-n = 19
+n = 10
 a = -2
 b = 4
 n = n+1
