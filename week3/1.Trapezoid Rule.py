@@ -21,7 +21,7 @@ for n in range(2,n+1):
     f = 0.2+25*x-200*x**2+675*x**3-900*x**4+400*x**5
     # print(f)
     I_trap = (h/2)*(f[0] + 2 * sum(f[1:n-1]) + f[n-1])
-    err_trap = (np.abs(I_trap-trueValue)/I_trap)*100
+    err_trap = (np.abs(trueValue-I_trap)/trueValue)*100
     listN.append(n-1)
     listError.append(err_trap)
     listTable.append([n-1,f'{h:.4f}',f'{I_trap:.4f}',f'{err_trap:.4f}'])
