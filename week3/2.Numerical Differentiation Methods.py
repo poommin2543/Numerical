@@ -31,6 +31,7 @@ print(f'xi-2 : {x-h-h:.4f}\txi-1 : {x-h:.4f}\txi : {x:.4f}\txi+1 : {x+h:.4f}\txi
 
 # Calculating the error of each method.
 Truevalue = Truevalues()
+print(f'Truevalue : {Truevalue}')
 err_foward = np.abs((forward1step() - Truevalue)/Truevalue*100)
 err_backward = np.abs((backward1step() - Truevalue)/Truevalue*100)
 err_center = np.abs((center1step() - Truevalue)/Truevalue*100)
