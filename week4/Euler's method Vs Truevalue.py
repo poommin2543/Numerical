@@ -5,7 +5,7 @@ import numpy as np
 x=[0]
 y=[1]
 yt=[1]
-h=0.5
+h=0.01
 i=0 #xStart
 xEnd = 4
 print('x[i]\t\ty_true\t\ty[i]\tet')
