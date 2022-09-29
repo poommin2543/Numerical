@@ -48,3 +48,29 @@ print(error)
 # y_interp = interp1d(X, Y)
 # print("Value of Y at x = {} is".format(interpolate_x),
 #       y_interp(interpolate_x))
+
+#graph
+
+# The above code is plotting the data points, the interpolation function, and the true function.
+# import matplotlib.pyplot as plt
+# from scipy import interpolate
+# import numpy as np
+# x = np.arange(0, 20)
+# y = np.sin(x) * np.exp(-x/20.0) 
+
+# # interpolation function from scipy
+# f = interpolate.interp1d(x, y, kind = 'linear')
+
+# # x range for the interpolation function
+# x_f = np.arange(0, 19, 0.1)
+# y_f = f(x_f)   # use interpolation function returned by `interp1d`
+
+# # true function that is being interpolated
+# x_t = np.arange(0, 20, 0.1)
+# y_t = np.sin(x_t) * np.exp(-x_t/20.0) 
+
+
+# plt.plot(x, y, 'o', x_f, y_f, '-', x_t, y_t, ':')
+# plt.legend(['data', 'interpolation', 'true function'])
+
+# plt.show()
