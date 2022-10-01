@@ -6,9 +6,9 @@ w,v=eig(a)
 print('E-value:', w)
 print('E-vector', v)
 
-a = np.array([[2, 2, 4], 
-              [1, 3, 5],
-              [2, 3, 4]])
+a = np.array([[1, 2, 3], 
+              [0, 5, 6],
+              [0, 0, 1]])
 w,v=eig(a)
 print('E-value:', w)
 print('E-vector', v)
